@@ -1,17 +1,18 @@
 package dev.nyanchuk.javaperson;
 
-/**
- * Hello world!
- */
 public final class App {
     private App() {
     }
 
-    /**
-     * Says hello to the world.
-     * @param args The arguments of the program.
-     */
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
+        PersonInfo personInfo = new PersonInfo();
+
+        Person person1 = new Person("Maria", "Alvares", 1, 1990, "Spain", Gender.FEMALE);
+        Person person2 = new Person("Leo", "Yanchuk", 2, 2018, "Ucraine", Gender.MALE);
+
+        personInfo.printPersonInfo(person1);
+        personInfo.printPersonInfo(person2);
+
     }
 }

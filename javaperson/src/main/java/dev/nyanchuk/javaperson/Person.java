@@ -19,4 +19,63 @@ public class Person {
         this.gender = gender;
     }
 
+    // Getters
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getBirthYear() {
+        return birthYear;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public char getGender() {
+        return gender;
+    }
+
+    // Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setBirthYear(int birthYear) {
+        this.birthYear = birthYear;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+    // Method to print all info about a person
+    public void printPerson() {
+        System.out.println("Name: " + name);
+        System.out.println("Surname: " + surname);
+        System.out.println("ID: " + id);
+        System.out.println("Birth Year: " + birthYear);
+        System.out.println("Country of Birth: " + country);
+        System.out.println("Gender: " + gender);
+    }
 }

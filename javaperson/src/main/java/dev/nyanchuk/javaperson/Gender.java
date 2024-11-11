@@ -11,7 +11,7 @@ public enum Gender {
         this.gen = gender;
     }
 
-    public char getGen() {
+    public char getGenderValue() {
         return gen;
     }
 

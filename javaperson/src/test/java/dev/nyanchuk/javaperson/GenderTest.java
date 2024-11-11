@@ -7,8 +7,8 @@ public class GenderTest {
 
     @Test
     void testGetGen() {
-        assertEquals('M', Gender.MALE.getGen());
-        assertEquals('F', Gender.FEMALE.getGen());
-        assertEquals('O', Gender.OTHER.getGen());
+        assertEquals('M', Gender.MALE.getGenderValue());
+        assertEquals('F', Gender.FEMALE.getGenderValue());
+        assertEquals('O', Gender.OTHER.getGenderValue());
     }
 }

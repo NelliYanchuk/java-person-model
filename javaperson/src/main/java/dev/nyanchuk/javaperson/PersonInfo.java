@@ -3,19 +3,17 @@ package dev.nyanchuk.javaperson;
 public class PersonInfo {
 
     public void printPersonInfo(Person person) {
-
-        // Method to print all info about a person
         SleepOutput.sleepOutput(1000); // 1 sec
-        System.out.println("\nName: " + person.name);
+        System.out.println("\nName: " + person.getName());
         SleepOutput.sleepOutput(500);
-        System.out.println("Surname: " + person.surname);
+        System.out.println("Surname: " + person.getSurname());
         SleepOutput.sleepOutput(500);
-        System.out.println("ID: " + person.id);
+        System.out.println("ID: " + person.getId());
         SleepOutput.sleepOutput(500);
-        System.out.println("Birth Year: " + person.birthYear);
+        System.out.println("Birth Year: " + person.getBirthYear());
         SleepOutput.sleepOutput(500);
-        System.out.println("Country of Birth: " + person.country);
+        System.out.println("Country of Birth: " + person.getCountry());
         SleepOutput.sleepOutput(500);
-        System.out.println("Gender: " + person.gender);
+        System.out.println("Gender: " + person.getGender().getGenderValue());
     }
 }

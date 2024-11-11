@@ -1,44 +1,90 @@
-Потрібна програма, яка моделює концепцію людини. Особа має прізвище, ім’я, по батькові, номер документа, що посвідчує особу, та рік народження. Клас повинен мати конструктор, який ініціалізує значення його відповідних атрибутів.
+# Java Person Model
 
-Клас повинен містити такі методи:
-Визначте метод, який виводить значення атрибутів об'єкта в консоль.
-Додайте два нових атрибути до класу Person. 
-Атрибут, який представляє країну народження особи (типу String), а інший, який ідентифікує стать особи, який має бути представлений у вигляді символу зі значеннями «H», «M», «O».
-Змініть конструктор класу Person, щоб він ініціалізував ці два нові атрибути.
-Змініть метод друку класу Person, щоб він відображав значення нових атрибутів на екрані.
-Запустіть консольну програму з класу App У основному методі класу App необхідно створити двох людей і значення їх атрибутів повинні відображатися на екрані (Термінал).
+## Project Description
 
-Примітка.  Для друку в консолі використовуйте System.out.println()
+The **Java Person Model** is a console-based Java application designed to model the concept of a "Person" with various attributes, including name, surname, ID number, year of birth, country of birth, and gender. This project demonstrates object-oriented programming concepts, including the use of constructors, methods, and enums for attribute management.
 
-Вимоги:
-Виконайте прохання
-Атрибути класу Person повинні бути перевірені (70% покриття). 
-Код англійською.
-Результати роботи:
-Репозиторій GitHub (посилання)
-Діаграма об'єкта
-Знімок екрана розділу «Тестування» коду Visual Studio, де ви можете побачити покриття тестів
-----------------------------
-A program is required to model the concept of a person. A person has a name, surname, ID number, and birth year. The class should have a constructor that initializes the values of these respective attributes.
+## Project Requirements
 
-The class should include the following methods:
-- Define a method that prints the values of the object’s attributes to the console.
-- Add two new attributes to the `Person` class: 
-  - One attribute representing the person’s country of birth (type `String`)
-  - Another attribute representing the person’s gender, which should be represented as a `char` with values 'M', 'F', or 'O'.
-- Modify the `Person` class constructor to initialize these two new attributes.
-- Modify the `print` method of the `Person` class to display the values of these new attributes on the screen.
+The **Person** class in this project includes:
 
-Start the console application from the `App` class. In the `main` method of the `App` class, two persons should be created, and the values of their attributes should be displayed on the screen (Terminal).
+1. **Attributes**:
+   - `name` (String): Person’s first name.
+   - `surname` (String): Person’s surname.
+   - `id` (int): Unique ID number for each person.
+   - `birthYear` (int): Year of birth.
+   - `country` (String): Country of birth.
+   - `gender` (char): Person's gender, represented by 'M' (Male), 'F' (Female), or 'O' (Other).
 
-**Note**: Use `System.out.println()` to print to the console.
+2. **Constructor**:
+   - Initializes each of the **Person** attributes.
 
-**Requirements**:
-- Fulfill the specified requirements
-- The attributes of the `Person` class should be tested (70% coverage).
-- Code in English.
+3. **Methods**:
+   - **printPersonInfo**: This method prints each of the **Person** object’s attributes to the console.
 
-**Deliverables**:
-- GitHub Repository (link)
-- Object Diagram
-- Screenshot of the "Testing" section in Visual Studio Code showing test coverage.
+## Application Entry Point
+
+The **App** class serves as the console application entry point:
+   - In `main`, two `Person` objects are created with sample data.
+   - Each object's attributes are displayed in the console through the `printPersonInfo` method.
+
+## Setup and Usage
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- **Java Development Kit (JDK) 8** or higher.
+
+### Installation and Running the Application
+
+1. **Clone the Repository**:
+
+       git clone https://github.com/NelliYanchuk/java-person-model.git
+
+2. **Navigate to the Project Directory**:
+
+       cd java-person-model
+
+3. **Compile the Program**:
+
+       javac -d bin src/dev/nyanchuk/javaperson/*.java
+
+4. **Run the App Class**:
+
+       java -cp bin dev.nyanchuk.javaperson.App
+
+### Expected Output
+
+The application will display the attributes of each `Person` object in the console.
+
+## Project Diagram
+
+<img src="images/diagram-person.png" alt="Diagram" width="40%">
+
+Also you can find diagram here `images/diagram-person.png`
+
+## Testing
+
+### Requirements:
+- A minimum of 70% code coverage is required.
+
+### Code Coverage
+
+In Visual Studio Code, navigate to the **Testing** section to run tests and observe code coverage. The project ensures a minimum of 70% coverage across all methods.
+
+<img src="images/test-cover-person.png" alt="Test Cover" width="30%">
+
+Also you can find test covering here `images/test-cover-person.png`
+
+## Deliverables
+
+1. **GitHub Repository**: [Project Repository](https://github.com/NelliYanchuk/java-person-model)
+2. **Object Diagram**: Diagram of the `Person` structure.
+3. **Testing Screenshot**: A screenshot of the code coverage from the Visual Studio Code **Testing** section.
+
+## Connect with me:
+
+- [GitHub](https://github.com/NelliYanchuk)
+- [LinkedIn](https://www.linkedin.com/in/nelli-yanchuk-a24b81138/)
+

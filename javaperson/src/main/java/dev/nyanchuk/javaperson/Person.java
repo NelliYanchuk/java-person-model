@@ -69,19 +69,4 @@ public class Person {
         this.gender = gender;
     }
 
-    // Method to print all info about a person
-    public void printPerson() {
-        SleepOutput.sleepOutput(1000); // 1 sec
-        System.out.println("\nName: " + name);
-        SleepOutput.sleepOutput(500);
-        System.out.println("Surname: " + surname);
-        SleepOutput.sleepOutput(500);
-        System.out.println("ID: " + id);
-        SleepOutput.sleepOutput(500);
-        System.out.println("Birth Year: " + birthYear);
-        SleepOutput.sleepOutput(500);
-        System.out.println("Country of Birth: " + country);
-        SleepOutput.sleepOutput(500);
-        System.out.println("Gender: " + gender);
-    }
 }

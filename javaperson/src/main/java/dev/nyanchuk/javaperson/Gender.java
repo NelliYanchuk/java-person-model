@@ -15,8 +15,4 @@ public enum Gender {
         return gen;
     }
 
-    public void setGen(char gen) {
-        this.gen = gen;
-    }
-
 }

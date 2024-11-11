@@ -7,10 +7,10 @@ public class Person {
     int id;
     int birthYear;
     String country;
-    char gender;
+    Gender gender;
 
     // Constructor
-    public Person(String name, String surname, int id, int birthYear, String country, char gender) {
+    public Person(String name, String surname, int id, int birthYear, String country, Gender gender) {
         this.name = name;
         this.surname = surname;
         this.id = id;
@@ -40,7 +40,7 @@ public class Person {
         return country;
     }
 
-    public char getGender() {
+    public Gender getGender() {
         return gender;
     }
 
@@ -63,10 +63,6 @@ public class Person {
 
     public void setCountry(String country) {
         this.country = country;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
     }
 
 }

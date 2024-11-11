@@ -5,6 +5,9 @@ public final class App {
     }
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Person person1 = new Person("Maria", "Alvares", 1, 1990, "Spain", 'F');
+        Person person2 = new Person("Leo", "Yanchuk", 2, 2018, "Ucraine", 'M');
+
+        
     }
 }

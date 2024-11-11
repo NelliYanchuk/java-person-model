@@ -5,14 +5,18 @@ public enum Gender {
     FEMALE('F'),
     OTHER('O');
 
+    private char gen;
+
+    Gender(char gender) {
+        this.gen = gender;
+    }
+
     public char getGen() {
         return gen;
     }
 
-    private char gen;
+    public void setGen(char gen) {
+        this.gen = gen;
+    }
 
-    Gender(char gender) {
-      this.gen = gender;
-    } 
-  
 }

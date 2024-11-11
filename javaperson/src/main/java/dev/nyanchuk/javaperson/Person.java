@@ -71,7 +71,7 @@ public class Person {
 
     // Method to print all info about a person
     public void printPerson() {
-        System.out.println("Name: " + name);
+        System.out.println("\nName: " + name);
         System.out.println("Surname: " + surname);
         System.out.println("ID: " + id);
         System.out.println("Birth Year: " + birthYear);
